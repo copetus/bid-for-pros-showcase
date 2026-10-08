@@ -13,7 +13,6 @@ function show(index) {
   document.querySelector('#viewer-caption').textContent = figure.querySelector('figcaption p').textContent;
   image.src = link.href;
   image.alt = link.querySelector('img').alt;
-  document.querySelector('#original').href = link.href;
   document.querySelector('#position').textContent = `${index + 1} / ${links.length}`;
   previous.disabled = index === 0;
   next.disabled = index === links.length - 1;
